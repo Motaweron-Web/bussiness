@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <!--  favicon -->
     <link rel="shortcut icon" href="assets/imgs/fav.ico">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
     <!-- normalize css -->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!-- fontawesome 6 -->
@@ -25,13 +25,65 @@
     <!-- slider -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/ar-style.css">
 
 </head>
 
 <body>
 
-    <div id="Header"></div>
+
+<div id="Header">
+    <nav class="navbar navbar-expand-lg navbar-light nav-option fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/imgs/logo-c.png" />
+            </a>
+            <!-- Collapse button -->
+            <button class="navbar-toggler pl-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white d-flex justify-content-center align-items-center"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <!-- Left -->
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> الرئيسية </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"> من نحن </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html"> خدماتنا </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">  تواصل معنا  </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="management-consulting_ltr.html">  English  </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script>
+    $("body").click(function (event) {
+        $('.notifications').slideUp();
+    });
+
+    $(".notifications").click(function (event) {
+        event.stopPropagation();
+    });
+
+    $(".nav-link.notificationsIcon").click(function (event) {
+        event.stopPropagation();
+        $('.notifications').slideToggle();
+    });
+</script>
 
     <main>
 
@@ -42,9 +94,9 @@
         <div id="contact" class="contact  bg18 pt-100 pb-100 md-pt-70 md-pb-70">
 
             <div class="title-top d-flex align-items-center justify-content-center">
-                <a class="" href="index.html"> Home </a>
+                <a class="" href="index.html">  الرئيسية </a>
                 <span>&nbsp; &nbsp; / &nbsp; &nbsp;</span>
-                <p href="">   Management Consulting Services </p>
+                <p href="">   خدمات االستشارات الإدارية</p>
                 <img class="sec-con" src="assets/imgs/contact-shape-1.png" alt="">
             </div>
         </div>
@@ -58,7 +110,8 @@
             <div class="col-lg-6 ">
                 <div class="sec-title">
                     <h2 class="title pb-22">
-                        Management Consulting Services
+                        خدمات االستشارات الإدارية
+
 
 
 
@@ -72,7 +125,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Issuance of an overall report identifying the main strategies that enable us to develop the business entity.                    </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5"> تنفيذ تقرير شامل يحدد أهم االستراتيجيات التي تمكننا من تطوير المنشاة .                    </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -82,7 +135,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Issuance of licenses and permits from the competent authorities                </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5"> استخراج الرخص والتصاريح من الجهات المختصة.               </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -92,7 +145,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Development and preparation of the organizational and administrative structure that suits the business of the entity.  </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5"> التسجيل والمتابعة في البرامج الحكومية )مدد ,  قوى ,مقيم, دعم التوظيف, اعتماد وغيرها(  </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -102,7 +155,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Development and preparation of the organizational and administrative structure that suits the business of the entity.  </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5">تطوير واعداد الهيكل التنظيمي واإلداري المناسب لنشاط المنشاة.  </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -112,7 +165,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Preparation of the salary scale and job descriptions  </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5"> تجهيز أهم اللوائح والسياسات التي تختص بها المنشآت وتطبيقها . </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -122,7 +175,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Providing recruitment services and attraction of personnel for vacancies, thus supporting the entity's staffing integration  </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5">  إعداد سلم الرواتب وبطاقات الوصف الوظيفي  </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -132,7 +185,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Providing recruitment services and attraction of personnel for vacancies, thus supporting the entity's staffing integration  </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5"> تقديم خدمات التوظيف واستقطاب الكوادر للشواغر الوظيفية بما يعزز التكامل بين الموظفين بالمنشأة  </p>
 
                         </div>
                         <div class="col-md-6" style="min-height: 120px;     min-height: 120px;
@@ -142,7 +195,7 @@
     box-shadow: 0px 0px 5px #ddd;
     border-radius: 8px; margin-bottom: 10px;">
     
-                            <p class="margin-0 pt-15 pb-4 pr-md-5"> Drafting, writing, and having employment agreements authenticated by the official government authorities  </p>
+                            <p class="margin-0 pt-15 pb-4 pr-md-5">  صياغة العقود وكتابتها وتوثيقها في القطاعات الحكومية الرسمية.  </p>
 
                         </div>
                        
@@ -181,9 +234,103 @@
     </main>
 
 
-    <footer id="footer" class="footer">
+<footer id="footer" class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
+                    <div class="footer-logo mb-40">
+                        <a href="index.html"><img src="assets/imgs/logo-c.png" alt=""></a>
+                    </div>
+                    <div class="textwidget white-color pb-5"><p>نحن نستنكر بسخط صالح ونكره الرجال الذين تم خداعهم بشدة والعرض التوضيحي الذي أدركوه ، الذين أعمتهم الرغبة ، لدرجة أنهم لا يستطيعون التنبؤ بها.</p>
+                    </div>
+                    <ul class="footer-social md-mb-30">
+                        <li>
+                            <a href="#" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="# " target="_blank"><span><i class="fa-brands fa-twitter"></i></span></a>
+                        </li>
 
-    </footer>
+                        <li>
+                            <a href="# " target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="# " target="_blank"><span><i class="fa-brands fa-google"></i></span></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
+                    <h3 class="footer-title">خدماتنا</h3>
+                    <ul class="site-map">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <!--                            <li><a href="faqs.html">Faqs</a></li>-->
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
+                    <h3 class="footer-title">بيانات التواصل</h3>
+                    <ul class="address-widget">
+                        <li>
+                            <i class="flaticon-location"></i>
+                            <div class="desc">   مكة<br>
+                                السعودية</div>
+                        </li>
+                        <li>
+                            <i class="flaticon-call"></i>
+                            <div class="desc">
+                                <a href="tel:(+880)15569569365">(+966)155 69569</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-email"></i>
+                            <div class="desc">
+                                <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-clock-1"></i>
+                            <div class="desc">
+                                ساعات العمل : 8 ص - 11 م
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <h3 class="footer-title">النشرة الإخبارية</h3>
+                    <p class="widget-desc white-color">ابق على اطلاع بآخر أخبارنا ومنتجاتنا.</p>
+                    <p>
+                        <input type="email" name="EMAIL" placeholder="بريدك الالكترونى " required="">
+                        <input type="submit" value="اشترك الان">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row y-middle">
+                <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
+                    <ul class="copy-right-menu">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <!--                            <li><a href="faqs.html">Faqs</a></li>-->
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="copyright text-lg-start text-center ">
+                        <p>© 2022 المطورون - حقوق النشر . كل الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
 
 
 
@@ -203,10 +350,10 @@
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
 
-    <script>
-        $('#Header').load("Header.html");
-        $('#footer').load("Footer.html");
-    </script>
+<!--    <script>-->
+<!--        $('#Header').load("Header.html");-->
+<!--        $('#footer').load("Footer.html");-->
+<!--    </script>-->
 
 </body>
 
