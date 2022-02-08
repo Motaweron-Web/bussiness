@@ -676,6 +676,10 @@ right: -73px;
 .nice-select .option{
   text-align: start;
 }
+.rs-services.style2.rs-services-style2 .service-wrap .image-part img{
+  height: 200px;
+  object-fit: cover;
+}
 /* ---------------------------------------------*/
 /* ---------------------------------------------*/
 /*   ---------------     services   --------------*
