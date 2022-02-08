@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -25,127 +25,130 @@
     <!-- slider -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- custom css -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-    <!-- ar css -->
     <link rel="stylesheet" href="assets/css/ar-style.css">
 
 </head>
 
 <body>
 
+    <div id="Header">
+        <nav class="navbar navbar-expand-lg navbar-light nav-option fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/imgs/logo-c.png" />
+                </a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler pl-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span
+                        class="navbar-toggler-icon text-white d-flex justify-content-center align-items-center"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!-- Left -->
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> الرئيسية </a>
+                        </li>
 
-    <div id="mySidenav" class="sidenav">
-        <button   class="btn closebtn" onclick="closeNav()">&times;</button>
-        <a href="#">الرئيسية</a>
-        <a href="about.html">من نحن</a>
-        <a href="services.html">خدماتنا</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"> من نحن </a>
+                        </li>
 
-        <a href="contact.html">بيانات التواصل</a>
-        <a href="index_ltr.html">English</a>
-      </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html"> خدماتنا </a>
+                        </li>
 
-      <button class="nav-btn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
-
-
-    <main>
-        <section class="intro">
-            <div class="contents">
-                <div class="logo">
-                    <img src="assets/imgs/logo.png" alt="">
-                </div>
-                <div class="start">
-                    <a href="#serve">ابدأ هنا</a>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> تواصل معنا </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="administrative-servicesEN.html"> English </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </div>
+
+    <script>
+        $("body").click(function (event) {
+            $('.notifications').slideUp();
+        });
+
+        $(".notifications").click(function (event) {
+            event.stopPropagation();
+        });
+
+        $(".nav-link.notificationsIcon").click(function (event) {
+            event.stopPropagation();
+            $('.notifications').slideToggle();
+        });
+    </script>
+
+    <main>
 
 
-        </section>
 
-        <!-- Services Section Start -->
-        <section id="serve" class="pt-5">
 
-                <div class="container">
-                    <div class="sec-title text-center  ">
-                        <span class="sub-text small">اهلا بك </span>
-                        <h2 class="title"> منزل الاعمال من هنا ننطلق </h2>
-                    </div>
-                </div>
+        <!-- Contact Section Start -->
+        <div id="contact" class="contact  bg18 pt-100 pb-100 md-pt-70 md-pb-70">
 
-        </section>
-        <!-- Services Section End -->
-
-        <!--  -->
-        <section id="about" class="py-5 my-5">
-
-                <div class="container">
-                    <div class="row py-5">
-                        <div class="col-lg-6 ">
-                            <div class="about-content">
-                                <div class="images-part">
-                                    <img src="assets/imgs/about-1.jpg" alt="Images">
-                                </div>
-                                <div class="animations">
-                                    <div class="spinner dot">
-                                        <img class="scale" src="assets/imgs/3.png" alt="Images">
-                                    </div>
-                                    <div class="spinner ball">
-                                        <img class="dance2" src="assets/imgs/3.1.png" alt="Images">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pl-30 md-pr-l5">
-                            <div class="sec-title mb-50">
-                                <span class="sub-text small">من نحن</span>
-                                <h2 class="title title3 pb-25">منزل الأعمال
-                                </h2>
-                                <p class="margin-0">
-                                    شركة تقدم الحلول واالستشارات في مجاالت متعدّدة
-                                    تشمل المالية، واالدارية، والخدمات المساندة. 
-                                </p>
-                            </div>
-<!--                            <div id="accordion" class="accordion">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-header">-->
-<!--                                        <a class="card-link" href="#" data-bs-toggle="collapse"-->
-<!--                                            data-bs-target="#collapseOne" aria-expanded="true"> <i class="fa-solid fa-arrow-down"></i> Responsive & Pixel-->
-<!--                                            Perfect Design</a>-->
-<!--                                    </div>-->
-<!--                                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">-->
-<!--                                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--                                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo data-->
-<!--                                            communication.</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-header">-->
-<!--                                        <a class="collapsed card-link" href="#" data-bs-toggle="collapse"-->
-<!--                                            data-bs-target="#collapseTwo" aria-expanded="false"> <i class="fa-solid fa-arrow-down"></i> Elementor Page Builder-->
-<!--                                            Used</a>-->
-<!--                                    </div>-->
-<!--                                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">-->
-<!--                                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--                                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo data-->
-<!--                                            center and analytics.</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                </div>
-
-        </section>
+            <div class="title-top d-flex align-items-center justify-content-center">
+                <a class="" href="services.html"> خدماتنا </a>
+                <span>&nbsp; &nbsp; / &nbsp; &nbsp;</span>
+                <p href=""> الخدمات الإدارية </p>
+                <img class="sec-con" src="assets/imgs/contact-shape-1.png" alt="">
+            </div>
+        </div>
+        <!-- Contact Section End -->
 
         <!--  -->
+        <div class="about style2 py-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 ">
+                        <div class="sec-title">
+                            <h2 class="title pb-22">
+                                الخدمات الإدارية
+                            </h2>
+
+                            <ul>
+                                <li>إعداد سلم الرواتب وبطاقات الوصف الوظيفي.</li>
+                                <li>تقديم خدمات التوظيف واستقطاب الكوادر للشواغر الوظيفية بما يعزز التكامل بين الموظفين
+                                    بالمنشأة.</li>
+                                <li>صياغة العقود وكتابتها وتوثيقها في القطاعات الحكومية الرسمية.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pr-33 md-pr-15 md-mb-50">
+                        <div class="images-part">
+                            <img src="assets/imgs/3.jpg" alt="Images">
+                        </div>
+                    </div>
+
+                </div>
 
 
+
+
+
+            </div>
+            <div class="rs-animation">
+                <div class="animate-style">
+                    <img class="scale" src="assets/imgs/tri-circle-1.png" alt="About">
+                </div>
+            </div>
+        </div>
+        <!--  -->
 
 
 
 
     </main>
-
 
 
     <footer id="footer" class="footer">
@@ -244,8 +247,8 @@
 
 
 
-     <!-- juery -->
-    <script src="assets/js/jquery.min.js"></script>  <!-- juery -->
+    <!-- juery -->
+    <script src="assets/js/jquery.min.js"></script> <!-- juery -->
     <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
@@ -257,19 +260,11 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
-    <script>
-         // $("#footer").load("Footer.html");
-         /* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-    </script>
-
+    <!--    <script>-->
+    <!--        $('#Header').load("Header.html");-->
+    <!--        $('#footer').load("Footer.html");-->
+    <!--    </script>-->
 
 </body>
 

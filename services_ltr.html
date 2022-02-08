@@ -25,65 +25,68 @@
     <!-- slider -->
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <!-- custom css -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/ar-style.css">
+    <!-- <link rel="stylesheet" href="assets/css/ar-style.css"> -->
 
 </head>
 
 <body>
 
-<div id="Header">
-    <nav class="navbar navbar-expand-lg navbar-light nav-option fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/imgs/logo-c.png" />
+    <div id="Header">
+        <nav class="navbar navbar-expand-lg navbar-light nav-option fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/imgs/logo-c.png" />
 
 
-            </a>
-            <!-- Collapse button -->
-            <button class="navbar-toggler pl-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-white d-flex justify-content-center align-items-center"></span>
-            </button>
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <!-- Left -->
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index_ltr.html"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about_ltr.html"> Who we are </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services_ltr.html"> Services </a>
-                    </li>
+                </a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler pl-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span
+                        class="navbar-toggler-icon text-white d-flex justify-content-center align-items-center"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!-- Left -->
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_ltr.html"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_ltr.html"> Who we are </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services_ltr.html"> Services </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact_ltr.html">  Contact  </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">  العربية  </a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_ltr.html"> Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html"> العربية </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</div>
-<script>
-    $("body").click(function (event) {
-        $('.notifications').slideUp();
-    });
+        </nav>
+    </div>
+    <script>
+        $("body").click(function (event) {
+            $('.notifications').slideUp();
+        });
 
-    $(".notifications").click(function (event) {
-        event.stopPropagation();
-    });
+        $(".notifications").click(function (event) {
+            event.stopPropagation();
+        });
 
-    $(".nav-link.notificationsIcon").click(function (event) {
-        event.stopPropagation();
-        $('.notifications').slideToggle();
-    });
-</script>
+        $(".nav-link.notificationsIcon").click(function (event) {
+            event.stopPropagation();
+            $('.notifications').slideToggle();
+        });
+    </script>
 
     <main>
 
@@ -122,51 +125,67 @@
                     face any chaos and arrive at appropriate solutions.
                 </p>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="service-wrap">
                             <div class="image-part">
-                                <img src="assets/imgs/1.jpg" alt="">
+                                <a href="financial-consultingEN.html">
+                                    <img src="assets/imgs/1.jpg" alt="">
+                                </a>
                             </div>
                             <div class="content-part">
-                                <h3 class="title"><a href="financial-consulting_ltr.html">Financial Consulting Services</a></h3>
-                                <div class="desc">
-                                    We provide entities in all business sectors
-                                     with financial consulting, and assist them in 
-                                    attaining their goals and objectives by extending the following services
-                                </div>
+                                <h3 class="title"><a href="financial-consultingEN.html">Financial Consulting
+                                        Services</a></h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="service-wrap">
                             <div class="image-part">
-                                <img src="assets/imgs/2.jpg" alt="">
+                                <a href="financial-managementEN.html">
+                                    <img src="assets/imgs/2.jpg" alt="">
+                                </a>
                             </div>
                             <div class="content-part">
-                                <h3 class="title"><a href="management-consulting_ltr.html">Management Consulting Services</a></h3>
-                                <div class="desc">
-                                    Home of Business renders a whole-host of management consulting services to business entities, starting with discussion of
-                                    the project concept, through assistance in the issuance of licenses 
-                                </div>
+                                <h3 class="title"><a href="financial-managementEN.html">
+                                        financial management services
+                                    </a></h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="service-wrap">
                             <div class="image-part">
-                                <img src="assets/imgs/3.jpg" alt="">
+                                <a href="administrative-servicesEN.html">
+                                    <img src="assets/imgs/3.jpg" alt="">
+                                </a>
                             </div>
                             <div class="content-part">
-                                <h3 class="title"><a href="marketing_ltr.html">Marketing, Financial Support Services</a></h3>
-                                <div class="desc">We at Home of Business provide clients with
-                                    support necessary to increase the market value
-                                    of their emerging brands</div>
+                                <h3 class="title"><a href="administrative-servicesEN.html">
+                                        Administrative services
+                                    </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
-             
-           
-            
+
+                    <div class="col-lg-3 col-md-6 mb-3">
+                        <div class="service-wrap">
+                            <div class="image-part">
+                                <a href="management-consultingEN.html">
+                                    <img src="assets/imgs/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title"><a href="management-consultingEN.html">
+                                        Management Consulting Services
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -179,108 +198,106 @@
     </main>
 
 
-<footer id="footer" class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
-                    <div class="footer-logo mb-40">
-                        <a href="index.html"><img src="assets/imgs/logo-c.png" alt=""></a>
+    <footer id="footer" class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
+                        <div class="footer-logo mb-40">
+                            <a href="index.html"><img src="assets/imgs/logo-c.png" alt=""></a>
+                        </div>
+                        <div class="textwidget white-color pb-5">
+                            <p>
+                                home business <br>
+                                A company that provides solutions and consultancy in various fields, including
+                                financial, administrative, and support services
+                            </p>
+                        </div>
+                        <!-- <ul class="footer-social md-mb-30">
+                            <li>
+                                <a href="#" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa-brands fa-twitter"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa-brands fa-google"></i></span></a>
+                            </li>
+                        </ul> -->
                     </div>
-                    <div class="textwidget white-color pb-5"><p>We denounce with righteous indig nation in and dislike men who are so beguiled and to demo realized by the, so blinded by desire, that they cannot foresee.</p>
+                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
+                        <h3 class="footer-title"> Our Services </h3>
+                        <ul class="site-map">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <!--                            <li><a href="faqs.html">Faqs</a></li>-->
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <ul class="footer-social md-mb-30">
-                        <li>
-                            <a href="#" target="_blank"><span><i class="fa-brands fa-facebook-f"></i></span></a>
-                        </li>
-                        <li>
-                            <a href="# " target="_blank"><span><i class="fa-brands fa-twitter"></i></span></a>
-                        </li>
+                    <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
+                        <h3 class="footer-title">Contact Info</h3>
+                        <ul class="address-widget">
+                            <li>
+                                <i class="flaticon-location"></i>
+                                <div class="desc">
+                                    Kingdom Saudi Arabia
+                                    <br>
+                                    Riyadh
 
-                        <li>
-                            <a href="# " target="_blank"><span><i class="fa-brands fa-instagram"></i></span></a>
-                        </li>
-                        <li>
-                            <a href="# " target="_blank"><span><i class="fa-brands fa-google"></i></span></a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10 pl-55 md-pl-15">
-                    <h3 class="footer-title">Our Services</h3>
-                    <ul class="site-map">
-                        <li><a href="index_ltr.html">Home</a></li>
-                        <li><a href="about_ltr.html">About</a></li>
-                        <!--                    <li><a href="faqs.html">Faqs</a></li>-->
-                        <li><a href="contact_ltr.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 md-mb-10">
-                    <h3 class="footer-title">Contact Info</h3>
-                    <ul class="address-widget">
-                        <li>
-                            <i class="flaticon-location"></i>
-                            <div class="desc">Ta-134/A,   makkah<br>
-                                S.A</div>
-                        </li>
-                        <li>
-                            <i class="flaticon-call"></i>
-                            <div class="desc">
-                                <a href="#!">(+966)555 666 444</a>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="flaticon-email"></i>
-                            <div class="desc">
-                                <a href="#!">mail@mail.com</a>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="flaticon-clock-1"></i>
-                            <div class="desc">
-                                Office Hours: 8AM - 11PM
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <h3 class="footer-title">Newsletter</h3>
-                    <p class="widget-desc white-color">Stay up to update with our latest news and products.</p>
-                    <p>
-                        <input type="email" name="EMAIL" placeholder="Your email address" required="">
-                        <input type="submit" value="Subscribe Now">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row y-middle">
-                <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                    <ul class="copy-right-menu">
-                        <li><a href="index_ltr.html">Home</a></li>
-                        <li><a href="about_ltr.html">About</a></li>
-                        <!--                    <li><a href="faqs.html">Faqs</a></li>-->
-                        <li><a href="contact_ltr.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <div class="copyright text-lg-start text-center ">
-                        <p>© 2021 elmotaweron - Consulting Company Inc. All Rights Reserved.</p>
+                            </li>
+                            <li>
+                                <i class="flaticon-call"></i>
+                                <div class="desc">
+                                    <a href="tel:009960507699332">(+996) 0507699332</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="flaticon-email"></i>
+                                <div class="desc">
+                                    <a href="mailto:info@hob.sa">info@hob.sa</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <h3 class="footer-title">the news </h3>
+                        <p class="widget-desc white-color">Stay informed of our latest news .
+                        </p>
+                        <p>
+                            <input type="email" name="EMAIL" placeholder="Email" required="">
+                            <input type="submit" value="subscribe now">
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-6 md-mb-10 text-lg-end text-center order-last">
+                        <!-- <ul class="copy-right-menu">
+                            <li><a href="index.html">الرئيسية</a></li>
+                            <li><a href="about.html">من نحن</a></li>
+                            <li><a href="contact.html">تواصل معنا</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright text-lg-start text-center ">
+                            <p>© 2022 almotaweron - Copyright. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
-
-
-     <!-- juery -->
-    <script src="assets/js/jquery.min.js"></script>  <!-- juery -->
+    <!-- juery -->
+    <script src="assets/js/jquery.min.js"></script> <!-- juery -->
     <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
@@ -293,10 +310,10 @@
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
 
-<!--    <script>-->
-<!--        $('#Header').load("Header.html");-->
-<!--        $('#footer').load("Footer.html");-->
-<!--    </script>-->
+    <!--    <script>-->
+    <!--        $('#Header').load("Header.html");-->
+    <!--        $('#footer').load("Footer.html");-->
+    <!--    </script>-->
 
 </body>
 

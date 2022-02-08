@@ -11,7 +11,7 @@
     <!--  favicon -->
     <link rel="shortcut icon" href="assets/imgs/fav.ico">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- normalize css -->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <!-- fontawesome 6 -->
@@ -33,121 +33,133 @@
 
 <body>
 
-
-    <div id="mySidenav" class="sidenav">
-        <button   class="btn closebtn" onclick="closeNav()">&times;</button>
-        <a href="#">Home</a>
-        <a href="about_ltr.html">Who we are</a>
-        <a href="services_ltr.html">Our Services</a>
-        <a href="contact_ltr.html">Contact Details</a>
-        <a href="index.html">العربية</a>
-      </div>
-
-      <button class="nav-btn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+    <div id="Header">
+        <nav class="navbar navbar-expand-lg navbar-light nav-option fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/imgs/logo-c.png" />
 
 
-    <main>
-        <section class="intro">
-            <div class="contents">
-                <div class="logo">
-                    <img src="assets/imgs/logo.png" alt="">
-                </div>
-                <div class="start">
-                    <a href="#serve">start here</a>
+                </a>
+                <!-- Collapse button -->
+                <button class="navbar-toggler pl-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span
+                        class="navbar-toggler-icon text-white d-flex justify-content-center align-items-center"></span>
+                </button>
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!-- Left -->
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index_ltr.html"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_ltr.html"> Who we are </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services_ltr.html"> Services </a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact_ltr.html"> Contact </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="management-consulting.html"> العربية </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </div>
+    <script>
+        $("body").click(function (event) {
+            $('.notifications').slideUp();
+        });
+
+        $(".notifications").click(function (event) {
+            event.stopPropagation();
+        });
+
+        $(".nav-link.notificationsIcon").click(function (event) {
+            event.stopPropagation();
+            $('.notifications').slideToggle();
+        });
+    </script>
+
+    <main>
 
 
-        </section>
 
-        <!-- Services Section Start -->
-        <section id="serve" class="pt-5">
-             
-                <div class="container">
-                    <div class="sec-title text-center  ">
-                        <span class="sub-text small"> welcome                        </span>
-                        <h2 class="title">
-                            Home business from here we go
-                        </h2>
-                    </div>
-           
-                </div>
-             
-        </section>
-        <!-- Services Section End -->
 
-        <!--  -->
-        <section id="about" class="py-5 my-5">
-             
-                <div class="container">
-                    <div class="row py-5">
-                        <div class="col-lg-6 ">
-                            <div class="about-content">
-                                <div class="images-part">
-                                    <img src="assets/imgs/about-1.jpg" alt="Images">
-                                </div>
-                                <div class="animations">
-                                    <div class="spinner dot">
-                                        <img class="scale" src="assets/imgs/3.png" alt="Images">
-                                    </div>
-                                    <div class="spinner ball">
-                                        <img class="dance2" src="assets/imgs/3.1.png" alt="Images">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 pl-30 md-pr-l5">
-                            <div class="sec-title mb-50">
-                                <span class="sub-text small">About Us</span>
-                                <h2 class="title title3 pb-25">
-                                    business home
-                                </h2>
-                                <p class="margin-0">
-                                    A company that provides solutions and consultations in various fields, including financial, administrative, and support services.
-                                </p>
-                            </div>
-<!--                            <div id="accordion" class="accordion">-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-header">-->
-<!--                                        <a class="card-link" href="#" data-bs-toggle="collapse"-->
-<!--                                            data-bs-target="#collapseOne" aria-expanded="true"> <i class="fa-solid fa-arrow-down"></i> Responsive & Pixel-->
-<!--                                            Perfect Design</a>-->
-<!--                                    </div>-->
-<!--                                    <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">-->
-<!--                                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--                                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo data-->
-<!--                                            communication.</div> -->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="card">-->
-<!--                                    <div class="card-header">-->
-<!--                                        <a class="collapsed card-link" href="#" data-bs-toggle="collapse"-->
-<!--                                            data-bs-target="#collapseTwo" aria-expanded="false"> <i class="fa-solid fa-arrow-down"></i> Elementor Page Builder-->
-<!--                                            Used</a>-->
-<!--                                    </div>-->
-<!--                                    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">-->
-<!--                                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-<!--                                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo data-->
-<!--                                            center and analytics.</div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                        </div>
-                    </div>
-                </div>
-             
-        </section>
+        <!-- Contact Section Start -->
+        <div id="contact" class="contact  bg18 pt-100 pb-100 md-pt-70 md-pb-70">
+
+            <div class="title-top d-flex align-items-center justify-content-center">
+                <a class="" href="services_ltr.html"> services </a>
+                <span>&nbsp; &nbsp; / &nbsp; &nbsp;</span>
+                <p href=""> Management Consulting Services
+                </p>
+                <img class="sec-con" src="assets/imgs/contact-shape-1.png" alt="">
+            </div>
+        </div>
+        <!-- Contact Section End -->
 
         <!--  -->
+        <div class="about style2 py-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 ">
+                        <div class="sec-title">
+                            <h2 class="title pb-22">
+                                Management Consulting Services
+
+                            </h2>
+
+                            <ul>
+                                <li>Providing consultations, registration and follow-up of licenses and permits with the
+                                    competent authorities.
+                                </li>
+                                <li>Registration and follow-up in government programs (madad, strength, resident,
+                                    employment support, accreditation, etc.).
+                                </li>
+                                <li>Develop and prepare the appropriate organizational and administrative structure for
+                                    the facility's activity.
+                                </li>
+                                <li>Preparing and implementing the most important regulations and policies related to
+                                    establishments.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 pr-33 md-pr-15 md-mb-50">
+                        <div class="images-part">
+                            <img src="assets/imgs/3.jpg" alt="Images">
+                        </div>
+                    </div>
+
+                </div>
 
 
- 
+
+
+
+            </div>
+            <div class="rs-animation">
+                <div class="animate-style">
+                    <img class="scale" src="assets/imgs/tri-circle-1.png" alt="About">
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
 
 
 
     </main>
-
 
 
     <footer id="footer" class="footer">
@@ -249,8 +261,10 @@
 
 
 
-     <!-- juery -->
-    <script src="assets/js/jquery.min.js"></script>  <!-- juery -->
+
+
+    <!-- juery -->
+    <script src="assets/js/jquery.min.js"></script> <!-- juery -->
     <script src="assets/js/popper.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
@@ -262,19 +276,11 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/main.js"></script>
-    <script>
-         // $('#footer').load("Footer.html");
-         /* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
 
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-    </script>
-
+    <!--    <script>-->
+    <!--        $('#Header').load("Header.html");-->
+    <!--        $('#footer').load("Footer.html");-->
+    <!--    </script>-->
 
 </body>
 
